@@ -1,3 +1,7 @@
+## [3.1.6]
+- Correção: Compressão de imagem
+- Correção: Espelhamento de câmera
+
 ## [3.1.5]
 - Melhoria: Compressão de imagem
 - Melhoria: Captura com câmera traseira
