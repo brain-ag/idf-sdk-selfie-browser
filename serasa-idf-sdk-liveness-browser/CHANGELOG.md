@@ -1,3 +1,8 @@
+## [3.1.8]
+- Melhoria: Flag para não permitir a execução em navegadores que não estejam simulando um dispotivo
+- Melhoria: Novos parametros de customização (cor do botão e label da captura)
+- Correção: Correção de acessibilidade
+
 ## [3.1.6]
 - Correção: Compressão de imagem
 - Correção: Espelhamento de câmera
