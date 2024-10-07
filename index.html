@@ -1,0 +1,54 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1"><meta content="text/html;charset=utf-8" http-equiv="Content-Type"/><meta content="utf-8" http-equiv="encoding"/><title>Captura de selfie</title><script defer="defer" src="brscan-sdk-selfie.min.js"></script></head><body><div id="selfie"/><script>function iniciaSelfie() {
+  let selfie = new window.BrScanSDKSelfie.Selfie('');
+
+    
+  // Caso queira trocar a cor dos botões, cor de fundo das orientações e a fonte do componente, aqui está o exemplo:
+  // document.documentElement.style.setProperty('--cor-primary', '#123');
+  // document.documentElement.style.setProperty('--font-family', 'Inter');
+  // document.documentElement.style.setProperty('--cor-background-orientacoes', 'red');
+
+  // Imagens que são possíveis serem alteradas no componente:
+  // selfie.imgLiberar = '';
+  // selfie.imgLoading = '';
+  // selfie.imgLoadingFotografar = '';
+  // selfie.imgErrorDocumento = '';
+  // selfie.imgTelaModal = '';
+  // selfie.imgDicasRostoCentralizado = '';
+  // selfie.imgDicasAmbienteIluminado = '';
+  // selfie.imgDicasNaoAcessorios = '';
+  // selfie.imgDicasSigaAsIntrucoes = '';
+  // selfie.imgFecharIcone = '';
+  // selfie.imgOkIcone = '';
+
+  // Textos tela de Loading
+  selfie.loadingCapturaTitulo = "Carregando confirmação de identidade"
+  selfie.loadingCapturaDescricao = ""
+  document.documentElement.style.setProperty("--cor-primary", "red");
+  document.documentElement.style.setProperty("--cor-progresso-loading", "red");
+  // Fundo das orientações de captura
+   document.documentElement.style.setProperty("--cor-background-orientacoes", "green");
+
+  // Caso queira desativar a tela de instrução:
+  // selfie.wizzard = false;
+
+  // Efeito sonoro no fim da captura da selfie
+  // selfie.playCaptureSound = true;
+
+  //selfie.wizzard = true;
+  //selfie.desabilitaCapturaDesktop = false;
+
+
+  selfie.iniciaSelfie(document.getElementById("selfie"))
+    .then((selfie) => {
+      console.log(selfie);
+      //alert("Selfie recebida com sucesso");
+    })
+    .catch((err) => {
+      console.log(err);
+      console.log("Error id: " + err.id + "\nError message: " + err.desc);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  iniciaSelfie();
+});</script></body></html>
