@@ -1,3 +1,7 @@
+## [3.1.10]
+- Correção: Correção do zoom aplicado no processo de captura
+- Melhoria: Alteração da API de captura
+- Correção: Responsividade dos frames
 
 ## [3.1.9]
 - Correção: Correção botão primario
