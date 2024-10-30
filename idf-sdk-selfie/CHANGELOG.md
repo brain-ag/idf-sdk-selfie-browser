@@ -1,3 +1,6 @@
+## [3.1.11]
+- Correção: Ajuste de responsividade no frame de captura.
+
 ## [3.1.10]
 - Correção: Correção do zoom aplicado no processo de captura
 - Melhoria: Alteração da API de captura
