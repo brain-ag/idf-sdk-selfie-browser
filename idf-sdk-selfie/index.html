@@ -1,9 +1,13 @@
 <!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1"><meta content="text/html;charset=utf-8" http-equiv="Content-Type"/><meta content="utf-8" http-equiv="encoding"/><title>Captura de selfie</title><style>#selfieImg {
       width: 40%;
     }</style><script defer="defer" src="brscan-sdk-selfie.min.js"></script></head><body><div id="selfie"></div><img id="selfieImg"/><script>function iniciaSelfie() {
-      let selfie = new window.BrScanSDKSelfie.Selfie('1325927C99BF0EEA791F96CECE5D1D5B8BAC859D16CAABE4');
+      // PRODUCTION
+      // let selfie = new window.BrScanSDKSelfie.Selfie('1325927C99BF0EEA791F96CECE5D1D5B8BAC859D16CAABE4');
 
-      console.log('iniciaSelfie')
+      // HOMOLOG
+      let selfie = new window.BrScanSDKSelfie.Selfie('8B1671CB4FD7CBF7814E5C76A779C089219CA05183437247BA2ED4AD095C2F8A29C5E3698C5595A04E1E58B2DE9E4A61');
+      // let selfie = new window.BrScanSDKSelfie.Selfie('1325927C99BF0EEA791F96CECE5D1D5B8BAC859D16CAABE4');
+
       // Caso queira trocar a cor dos botões, cor de fundo das orientações e a fonte do componente, aqui está o exemplo:
       // document.documentElement.style.setProperty('--cor-primary', '#123');
       // document.documentElement.style.setProperty('--font-family', 'Inter');
