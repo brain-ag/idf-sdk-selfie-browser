@@ -1,8 +1,3 @@
-## [3.2.1]
-- Correção: Configuração da câmera e no cálculo de enquadramento
-- Correção: Responsividade do frame de captura
-- Melhoria: Criptografia
-
 ## [3.1.11]
 - Correção: Ajuste de responsividade no frame de captura.
 
