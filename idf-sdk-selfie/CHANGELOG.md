@@ -1,3 +1,6 @@
+## [3.2.2]
+- Correção: Responsividade do frame de captura
+
 ## [3.2.1]
 - Correção: Configuração da câmera e no cálculo de enquadramento
 - Correção: Responsividade do frame de captura
