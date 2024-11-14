@@ -13,7 +13,18 @@
   <div id="login" class="login-container">
     <img src="serasa-experian-logo.png" alt="Logo">
 
-    <input id="legacyKey" type="text" placeholder="Chave legada" name="legacyKey">
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="camera" value="traseira" checked>
+        Câmera Traseira
+      </label>
+      <label>
+        <input type="radio" name="camera" value="frontal">
+        Câmera Frontal
+      </label>
+    </div>
+
+    <input id="legacyKey" class="legacyKey" type="text" placeholder="Chave legada" name="legacyKey">
     <button id="legacyButton" type="button">Entrar com método legado</button>
 
     <!-- <input id="clientId" type="text" placeholder="ClientId" name="clientId">

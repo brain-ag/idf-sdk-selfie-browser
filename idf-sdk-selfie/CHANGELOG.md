@@ -1,3 +1,6 @@
+## [3.2.3]
+- Correção: Captura com a câmera traseira
+
 ## [3.2.2]
 - Correção: Responsividade do frame de captura
 
