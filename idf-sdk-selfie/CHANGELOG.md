@@ -1,4 +1,10 @@
-## [3.2.3]
+## [4.0.0]
+- Melhoria: Novo layout para tela de instrução e tela de carregamento
+- Melhoria: Segurança e identificação de câmeras virtuais ou suspeitas
+- Correção: Utilização da câmera após a finalização da captura
+- Correção: Fluxo de callback
+ 
+ ## [3.2.3]
 - Correção: Captura com a câmera traseira
 
 ## [3.2.2]
