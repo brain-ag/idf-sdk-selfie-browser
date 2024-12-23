@@ -16,10 +16,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: right;
     width: 300px;
-    /* Ajuste a largura conforme necessário */
 }
 
 .login-container img {
+    display: block;
     max-width: 100px;
     margin-bottom: 20px;
 }
@@ -27,14 +27,12 @@ body {
 .login-container input {
     display: block;
     width: calc(100%);
-    /* Ajuste para margem direita */
     padding: 10px;
     margin-bottom: 5px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    /* Inclui padding e border na largura total */
 }
 
 .login-container button {
@@ -44,8 +42,6 @@ body {
     background-color: #007BFF;
     color: #fff;
     cursor: pointer;
-    /* float: right; */
-    /* Alinha o botão à direita */
 }
 
 .login-container button:hover {
@@ -68,7 +64,6 @@ body {
     text-align: center;
     width: 80%;
     height: 60%;
-    display: none;
 }
 
 .sdkResult p {

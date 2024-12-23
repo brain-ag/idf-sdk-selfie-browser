@@ -1,3 +1,8 @@
+## [4.0.1]
+- Melhoria: Adiciona função para fazer preload do modelo (preloadModel) para conexões lentas
+- Melhoria: Adiciona timeout para captura (customizável, o default é desabilitado)
+- Melhoria: Adiciona timeout para conexões lentas (customizável, o default é 30 segundos). Caso o timeout seja atingido, o usuário pode tentar novamente com uma versão menor da imagem.
+
 ## [4.0.0]
 - Melhoria: Novo layout para tela de instrução e tela de carregamento
 - Melhoria: Segurança e identificação de câmeras virtuais ou suspeitas

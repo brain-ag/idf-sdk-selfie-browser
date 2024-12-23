@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <script src="js/config.js"></script>
+    <script>
+        function saveConfigForm() {
+            const config = {
+                playCaptureSound: document.getElementById('playCaptureSound').checked,
+                wizzard: document.getElementById('wizzard').checked,
+                desabilitaCapturaDesktop: document.getElementById('desabilitaCapturaDesktop').checked,
+                corPrimary: document.getElementById('corPrimary').value,
+                fontFamily: document.getElementById('fontFamily').value,
+                timeoutCaptura: document.getElementById('timeoutCaptura').value,
+                timeoutRequests: document.getElementById('timeoutRequests').value
+            };
+
+            saveConfig(config);
+
+            alert('Configurações salvas!');
+            window.location.href = 'index.html'; // Redireciona para index.html
+        }
+
+        window.onload = function () {
+            const config = loadConfig();
+
+            document.getElementById('desabilitaCapturaDesktop').checked = config.desabilitaCapturaDesktop;
+            document.getElementById('playCaptureSound').checked = config.playCaptureSound;
+            document.getElementById('wizzard').checked = config.wizzard;
+            document.getElementById('corPrimary').value = config.corPrimary;
+            document.getElementById('fontFamily').value = config.fontFamily;
+            document.getElementById('timeoutCaptura').value = config.timeoutCaptura;
+            document.getElementById('timeoutRequests').value = config.timeoutRequests;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Configurações</h1>
+    <form onsubmit="saveConfigForm(); return false;">
+        <label for="playCaptureSound">playCaptureSound:</label>
+        <input type="checkbox" id="playCaptureSound" name="playCaptureSound"><br><br>
+
+        <label for="wizzard">Iniciar Wizard:</label>
+        <input type="checkbox" id="wizzard" name="wizzard"><br><br>
+
+        <label for="desabilitaCapturaDesktop">desabilitaCapturaDesktop:</label>
+        <input type="checkbox" id="desabilitaCapturaDesktop" name="desabilitaCapturaDesktop"><br><br>
+
+        <label for="corPrimary">Cor primária:</label>
+        <input type="color" id="corPrimary" name="corPrimary" value="#002DD1"><br><br>
+
+        <label for="fontFamily">Fonte:</label>
+        <input type="text" id="fontFamily" name="fontFamily" value="Roboto"><br><br>
+
+        <label for="timeoutCaptura">Timeout captura (ms):</label>
+        <input type="number" id="timeoutCaptura" name="timeoutCaptura" value="0"><br><br>
+
+        <label for="timeoutRequests">Timeout requests (ms):</label>
+        <input type="number" id="timeoutRequests" name="timeoutRequests" value="0"><br><br>
+
+        <input type="submit" value="Salvar Configurações">
+    </form>
+</body>
+
+</html>
