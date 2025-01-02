@@ -1,3 +1,6 @@
+## [4.0.2]
+- Correção: Ajuste dos textos de carregamento
+
 ## [4.0.1]
 - Melhoria: Adiciona função para fazer preload do modelo (preloadModel) para conexões lentas
 - Melhoria: Adiciona timeout para captura (customizável, o default é desabilitado)
