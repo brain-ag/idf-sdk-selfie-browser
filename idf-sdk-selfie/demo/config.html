@@ -15,7 +15,8 @@
                 corPrimary: document.getElementById('corPrimary').value,
                 fontFamily: document.getElementById('fontFamily').value,
                 timeoutCaptura: document.getElementById('timeoutCaptura').value,
-                timeoutRequests: document.getElementById('timeoutRequests').value
+                timeoutRequests: document.getElementById('timeoutRequests').value,
+                cameraTraseira: document.getElementById('cameraTraseira').checked
             };
 
             saveConfig(config);
@@ -28,6 +29,7 @@
             const config = loadConfig();
 
             document.getElementById('desabilitaCapturaDesktop').checked = config.desabilitaCapturaDesktop;
+            document.getElementById('cameraTraseira').checked = config.cameraTraseira;
             document.getElementById('playCaptureSound').checked = config.playCaptureSound;
             document.getElementById('wizzard').checked = config.wizzard;
             document.getElementById('corPrimary').value = config.corPrimary;
@@ -49,6 +51,9 @@
 
         <label for="desabilitaCapturaDesktop">desabilitaCapturaDesktop:</label>
         <input type="checkbox" id="desabilitaCapturaDesktop" name="desabilitaCapturaDesktop"><br><br>
+
+        <label for="cameraTraseira">cameraTraseira:</label>
+        <input type="checkbox" id="cameraTraseira" name="cameraTraseira"><br><br>
 
         <label for="corPrimary">Cor primária:</label>
         <input type="color" id="corPrimary" name="corPrimary" value="#002DD1"><br><br>

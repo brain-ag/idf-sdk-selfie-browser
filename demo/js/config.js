@@ -1,1 +1,0 @@
-const defaultConfig={playCaptureSound:!0,wizzard:!0,desabilitaCapturaDesktop:!1,corPrimary:"#002DD1",fontFamily:"Roboto",timeoutCaptura:0,timeoutRequests:3e4};function loadConfig(){return JSON.parse(localStorage.getItem("config"))||defaultConfig}function saveConfig(t){localStorage.setItem("config",JSON.stringify(t))}
